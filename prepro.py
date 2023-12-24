@@ -239,7 +239,7 @@ def read_docred(file_in,
                     neg_samples += 1
                     
         assert len(relations) == len(entities) * (len(entities) - 1)
-        assert len(sents) < max_seq_length
+        
         sents = sents[:max_seq_length - 2] # truncate, -2 for [CLS] and [SEP]
         input_ids = tokenizer.convert_tokens_to_ids(sents)
         input_ids = tokenizer.build_inputs_with_special_tokens(input_ids)
