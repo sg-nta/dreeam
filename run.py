@@ -286,7 +286,7 @@ def main():
         basename = os.path.splitext(args.test_file)[0]
         test_file = os.path.join(args.data_dir, args.test_file)
         
-        test_features = read(test_file, tokenizer, transformer_type=args.transformer_type, max_seq_length=args.max_seq_length)
+        test_features = read(test_file, tokenizer, transformer_type=args.transformer_type, max_seq_length=512)
         
         if args.eval_mode != "fushion":
 

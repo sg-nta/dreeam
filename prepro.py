@@ -135,7 +135,7 @@ def get_pseudo_features(raw_feature: dict, pred_rels: list, entities: list, sent
 def read_docred(file_in, 
                 tokenizer, 
                 transformer_type="bert",
-                max_seq_length=1024, 
+                max_seq_length=512, 
                 teacher_sig_path="",
                 single_results=None):
     i_line = 0
