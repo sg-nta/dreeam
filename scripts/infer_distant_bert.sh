@@ -9,7 +9,7 @@ python run.py --data_dir dataset/docred \
 --load_path ${LOAD_DIR} \
 --eval_mode single \
 --test_file train_distant.json \
---test_batch_size 4 \
+--test_batch_size 2 \
 --evi_thresh 0.2 \
 --num_labels 4 \
 --num_class 97 \
